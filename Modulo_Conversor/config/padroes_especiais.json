@@ -1,0 +1,48 @@
+{
+  "regras_cil": {
+    "descricao": "CIL só deve ser adicionado quando houver menção explícita a acabamento ou cobertura cilíndrica",
+    "pattern": "(ACABAMENTO|COBERTURA).{0,50}CILINDR[IÍ]C[OA]",
+    "flags": "IGNORECASE"
+  },
+  "regras_cores_condutores": {
+    "descricao": "Sempre extrair cores quando houver identificação de veias coloridas",
+    "trigger_pattern": "IDENTIFICACAO VEIAS COLORIDAS",
+    "mapeamento_por_quantidade": {
+      "1": {
+        "pattern": "1[Cc].*PRETO",
+        "codigo": "(PT)"
+      },
+      "2": {
+        "pattern": "2[Cc].*PRETO.*AZUL CLARO",
+        "codigo": "(PT/AZ-CL)"
+      },
+      "3": {
+        "pattern": "3[Cc].*PRETO.*BRANCO.*AZUL CLARO",
+        "codigo": "(PT/BR/AZ-CL)"
+      },
+      "4": {
+        "pattern": "4[Cc].*PRETO.*BRANCO.*VERMELHO.*AZUL CLARO",
+        "codigo": "(PT/BR/VM/AZ-CL)"
+      },
+      "5": {
+        "pattern_verde_amarelo": "VERDE.*AMARELO|AMARELO.*VERDE",
+        "codigo": "VD/AM"
+      }
+    }
+  },
+  "padroes_formacao": {
+    "vfd_concentrico": "\\d+[Cc]x\\s*\\d+[,.]?\\d*mm2\\s*\\+\\s*\\d+[Cc]x\\s*\\d+[,.]?\\d*mm2",
+    "vfd_simetrico": "\\d+[Cc]x\\s*\\d+[,.]?\\d*mm2\\s*\\+\\s*\\d+[Cc]x\\s*\\d+[,.]?\\d*mm2",
+    "instrumentacao_pares": "\\d+[Pp]x\\s*\\d+[,.]?\\d*mm2",
+    "instrumentacao_ternas": "\\d+[Tt]x\\s*\\d+[,.]?\\d*mm2",
+    "instrumentacao_quadras": "\\d+[Qq]x\\s*\\d+[,.]?\\d*mm2",
+    "energia_controle": "\\d+[Cc]x\\s*\\d+[,.]?\\d*mm2"
+  },
+  "palavras_chave_tipo": {
+    "vfd": ["INVERSOR DE FREQUENCIA", "VFD"],
+    "instrumentacao": ["INSTRUMENTACAO", "INSTRUMENTAÇÃO"],
+    "energia": ["BAIXA TENSAO", "POTENCIA", "ENERGIA", "CABO DE COBRE FLEXIVEL"],
+    "controle": ["CONTROLE", "COMANDO"]
+  }
+}
+

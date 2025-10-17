@@ -1,0 +1,86 @@
+{
+  "secao_energia_controle": {
+    "0.5": "105",
+    "0,5": "105",
+    "0.75": "175",
+    "0,75": "175",
+    "1.0": "101",
+    "1,0": "101",
+    "1": "101",
+    "1.5": "115",
+    "1,5": "115",
+    "2.5": "125",
+    "2,5": "125",
+    "4.0": "140",
+    "4,0": "140",
+    "4": "140",
+    "6.0": "160",
+    "6,0": "160",
+    "6": "160",
+    "10": "110",
+    "10.0": "110",
+    "10,0": "110",
+    "16": "16",
+    "25": "25",
+    "35": "35",
+    "50": "50",
+    "70": "70",
+    "95": "95",
+    "120": "120",
+    "150": "150",
+    "185": "185",
+    "240": "240"
+  },
+  "secao_instrumentacao": {
+    "0.5": "05",
+    "0,5": "05",
+    "0.75": "75",
+    "0,75": "75",
+    "1.0": "01",
+    "1,0": "01",
+    "1": "01",
+    "1.5": "15",
+    "1,5": "15",
+    "2.5": "25",
+    "2,5": "25",
+    "4.0": "40",
+    "4,0": "40",
+    "4": "40"
+  },
+  "isolacao": {
+    "PVC/A": "PVC em 70°C",
+    "PVC/E": "PVC em 105°C",
+    "XLPE": "XLPE em 90°C",
+    "HEPR": "HEPR em 90°C",
+    "TPE": "TPE em 90°C"
+  },
+  "cobertura": {
+    "ST1": "PVC ST1 em 70°C",
+    "ST2": "PVC ST2",
+    "ST3": "PVC ST3",
+    "SHF1": "Termoplástico livre de halogênio",
+    "SHF2": "Termofixo livre de halogênio"
+  },
+  "cores": {
+    "PT": "Preto",
+    "BR": "Branco",
+    "VM": "Vermelho",
+    "AZ": "Azul",
+    "VD": "Verde",
+    "CZ": "Cinza",
+    "AM": "Amarelo",
+    "MR": "Marrom",
+    "AZ-CL": "Azul Claro",
+    "VD-AM": "Verde e Amarelo"
+  },
+  "elementos_instrumentacao": {
+    "P": "2",
+    "T": "3",
+    "Q": "4"
+  },
+  "blindagem_instrumentacao": {
+    "1_elemento": "MA",
+    "multiplos_elementos": "ITA"
+  }
+}
+
